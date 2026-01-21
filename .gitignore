@@ -1,0 +1,5 @@
+.env
+vibehistory
+vibe.log
+update_cache.json
+trusted_folders.toml

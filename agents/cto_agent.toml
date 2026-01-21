@@ -1,0 +1,10 @@
+active_model = "mistralai/mistral-large-latest"  # or your preferred model
+system_prompt_id = "cto_project"
+
+# Disable unnecessary tools for this agent
+disabled_tools = ["search_replace", "write_file"]
+
+# Override tool permissions
+
+[tools.read_file]
+permission = "always"
