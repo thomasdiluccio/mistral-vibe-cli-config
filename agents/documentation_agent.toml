@@ -1,0 +1,35 @@
+# Documentation Agent Configuration
+# Specialized for generating and maintaining accurate documentation
+
+active_model = "devstral-small"
+system_prompt_id = "document"
+
+# Disable write tools that could accidentally modify code
+disabled_tools = ["search_replace"]
+
+# Tool permission overrides for documentation workflows
+[tools.read_file]
+permission = "always"
+
+[tools.grep]
+permission = "always"
+
+[tools.write_file]
+permission = "ask"
+
+[tools.bash]
+permission = "ask"
+allowlist = [
+    "git",
+    "ls",
+    "cat",
+    "head",
+    "tail",
+    "wc"
+]
+
+# Focused context for documentation accuracy
+[project_context]
+max_chars = 25000
+default_commit_count = 8
+max_files = 300

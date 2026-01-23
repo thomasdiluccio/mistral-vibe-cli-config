@@ -1,0 +1,34 @@
+# Code Review Agent Configuration
+# Specialized for comprehensive code quality assurance and best practices
+
+active_model = "devstral-2"
+system_prompt_id = "code_review"
+
+# Disable write tools to ensure read-only code review
+disabled_tools = ["search_replace", "write_file"]
+
+# Tool permission overrides for thorough code analysis
+[tools.read_file]
+permission = "always"
+
+[tools.grep]
+permission = "always"
+
+[tools.bash]
+permission = "ask"
+allowlist = [
+    "git",
+    "ls", 
+    "cat",
+    "head",
+    "tail",
+    "wc",
+    "find",
+    "grep"
+]
+
+# Extended context for comprehensive reviews
+[project_context]
+max_chars = 30000
+default_commit_count = 15
+max_files = 500

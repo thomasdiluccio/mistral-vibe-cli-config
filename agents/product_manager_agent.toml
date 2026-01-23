@@ -1,0 +1,23 @@
+# Product Manager Agent Configuration
+# Specialized for feature planning, roadmapping, and product strategy
+
+active_model = "devstral-2"
+system_prompt_id = "create_plan"
+
+# Disable tools that aren't needed for planning
+disabled_tools = ["search_replace", "write_file", "bash"]
+
+# Tool permission overrides for product management workflows
+[tools.read_file]
+permission = "always"
+
+[tools.grep]
+permission = "always"
+
+[tools.todo]
+permission = "always"
+
+# Enable project context for better planning
+[project_context]
+max_chars = 20000
+default_commit_count = 10

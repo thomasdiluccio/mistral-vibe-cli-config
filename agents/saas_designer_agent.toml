@@ -1,0 +1,23 @@
+# SaaS Designer Agent Configuration
+# Specialized for SaaS UI/UX design with React and Tailwind CSS
+
+active_model = "devstral-2"
+system_prompt_id = "saas-designer"
+
+# Enable write tools for design documentation
+disabled_tools = ["bash", "search_replace"]
+
+# Tool permission overrides for design workflows
+[tools.read_file]
+permission = "always"
+
+[tools.grep]
+permission = "always"
+
+[tools.write_file]
+permission = "ask"
+
+# Context for design system analysis
+[project_context]
+max_chars = 20000
+default_commit_count = 8

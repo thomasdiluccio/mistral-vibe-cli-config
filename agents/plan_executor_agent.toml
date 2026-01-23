@@ -1,0 +1,26 @@
+# Plan Executor Agent Configuration
+# Specialized for precise implementation of predefined plans
+
+active_model = "devstral-2"
+system_prompt_id = "execute_plan"
+
+# Enable write tools for implementation but with caution
+disabled_tools = ["bash"]
+
+# Tool permission overrides for plan execution
+[tools.read_file]
+permission = "always"
+
+[tools.grep]
+permission = "always"
+
+[tools.search_replace]
+permission = "ask"
+
+[tools.write_file]
+permission = "ask"
+
+# Comprehensive context for accurate implementation
+[project_context]
+max_chars = 35000
+default_commit_count = 12

@@ -1,0 +1,30 @@
+# Feature Explorer Agent Configuration
+# Specialized for exploring new features and understanding requirements
+
+active_model = "devstral-2"
+system_prompt_id = "explore_feature"
+
+# Disable write tools for exploration phase
+disabled_tools = ["search_replace", "write_file"]
+
+# Tool permission overrides for feature exploration
+[tools.read_file]
+permission = "always"
+
+[tools.grep]
+permission = "always"
+
+[tools.bash]
+permission = "ask"
+allowlist = [
+    "git",
+    "ls",
+    "cat",
+    "find",
+    "grep"
+]
+
+# Broad context for comprehensive feature analysis
+[project_context]
+max_chars = 30000
+default_commit_count = 10

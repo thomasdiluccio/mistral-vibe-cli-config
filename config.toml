@@ -188,3 +188,102 @@ allowlist = []
 denylist = []
 max_write_bytes = 64000
 create_parent_dirs = true
+
+# Custom Commands Configuration
+[[commands]]
+name = "analyze"
+description = "Analyze business opportunities and market fit"
+agent = "business_analyst_agent"
+prompt = "Analyze the business opportunity for: {input}"
+
+[[commands]]
+name = "review"
+description = "Perform comprehensive code review"
+agent = "code_review_agent"
+prompt = "Review the following code for quality and best practices: {input}"
+
+[[commands]]
+name = "brainstorm"
+description = "Generate creative ideas and innovations"
+agent = "creative_agent"
+prompt = "Generate creative ideas for: {input}"
+
+[[commands]]
+name = "doc"
+description = "Generate or update documentation"
+agent = "documentation_agent"
+prompt = "Create or update documentation for: {input}"
+
+[[commands]]
+name = "explore"
+description = "Explore new feature requirements"
+agent = "feature_explorer_agent"
+prompt = "Explore requirements for: {input}"
+
+[[commands]]
+name = "frontend"
+description = "Develop frontend components"
+agent = "frontend_developer_agent"
+prompt = "Implement frontend component for: {input}"
+
+[[commands]]
+name = "issue"
+description = "Create structured issue or bug report"
+agent = "issue_creator_agent"
+prompt = "Create issue for: {input}"
+
+[[commands]]
+name = "learn"
+description = "Explain technical concepts"
+agent = "learning_agent"
+prompt = "Explain the concept of: {input}"
+
+[[commands]]
+name = "market"
+description = "Develop marketing strategies"
+agent = "marketer_agent"
+prompt = "Create marketing strategy for: {input}"
+
+[[commands]]
+name = "execute"
+description = "Execute implementation plan"
+agent = "plan_executor_agent"
+prompt = "Execute plan for: {input}"
+
+[[commands]]
+name = "plan"
+description = "Create implementation plan"
+agent = "product_manager_agent"
+prompt = "Create implementation plan for: {input}"
+
+[[commands]]
+name = "design"
+description = "Design SaaS UI/UX"
+agent = "saas_designer_agent"
+prompt = "Design UI/UX for: {input}"
+
+[[commands]]
+name = "backend"
+description = "Develop Symfony backend"
+agent = "symfony_developer_agent"
+prompt = "Implement backend for: {input}"
+
+[[commands]]
+name = "analyze-site"
+description = "Analyze website performance"
+agent = "website_analyzer_agent"
+prompt = "Analyze website: {input}"
+
+[[commands]]
+name = "arch"
+description = "Create technical architecture"
+agent = "cto_agent"
+prompt = "Design architecture for: {input}"
+
+# Command Categories for better organization
+[command_categories]
+business = ["analyze", "market", "plan"]
+development = ["review", "frontend", "backend", "execute", "arch"]
+creative = ["brainstorm", "design"]
+documentation = ["doc", "issue"]
+learning = ["learn", "explore"]

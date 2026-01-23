@@ -1,0 +1,23 @@
+# Business Analyst Agent Configuration
+# Specialized for market analysis, business viability, and opportunity assessment
+
+active_model = "devstral-2"
+system_prompt_id = "business_analyst"
+
+# Disable tools that aren't needed for business analysis
+disabled_tools = ["search_replace", "write_file", "bash"]
+
+# Tool permission overrides for business analysis workflows
+[tools.read_file]
+permission = "always"
+
+[tools.grep]
+permission = "always"
+
+[tools.todo]
+permission = "always"
+
+# Extended context for market research and competitive analysis
+[project_context]
+max_chars = 25000
+default_commit_count = 8

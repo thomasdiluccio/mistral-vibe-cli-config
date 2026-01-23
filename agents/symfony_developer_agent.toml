@@ -1,0 +1,26 @@
+# Symfony Developer Agent Configuration
+# Specialized for Symfony PHP framework development
+
+active_model = "devstral-2"
+system_prompt_id = "symfony-developer"
+
+# Enable write tools for backend development
+disabled_tools = ["bash"]
+
+# Tool permission overrides for Symfony workflows
+[tools.read_file]
+permission = "always"
+
+[tools.grep]
+permission = "always"
+
+[tools.search_replace]
+permission = "ask"
+
+[tools.write_file]
+permission = "ask"
+
+# Context for Symfony application development
+[project_context]
+max_chars = 25000
+default_commit_count = 10

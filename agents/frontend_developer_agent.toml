@@ -1,0 +1,27 @@
+# Frontend Developer Agent Configuration
+# Specialized for modern frontend development with TanStack and React
+
+active_model = "devstral-2"
+system_prompt_id = "frontend-developer"
+
+# Enable write tools for frontend development
+disabled_tools = ["bash"]
+
+# Tool permission overrides for frontend workflows
+[tools.read_file]
+permission = "always"
+
+[tools.grep]
+permission = "always"
+
+[tools.search_replace]
+permission = "ask"
+
+[tools.write_file]
+permission = "ask"
+
+# Focused context for frontend development
+[project_context]
+max_chars = 20000
+default_commit_count = 8
+max_files = 200

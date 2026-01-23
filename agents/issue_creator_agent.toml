@@ -1,0 +1,30 @@
+# Issue Creator Agent Configuration
+# Specialized for creating structured, actionable issues and bug reports
+
+active_model = "devstral-small"
+system_prompt_id = "create_issue"
+
+# Disable write tools to prevent accidental modifications
+disabled_tools = ["search_replace", "write_file"]
+
+# Tool permission overrides for issue creation workflows
+[tools.read_file]
+permission = "always"
+
+[tools.grep]
+permission = "always"
+
+[tools.bash]
+permission = "ask"
+allowlist = [
+    "git",
+    "ls",
+    "cat",
+    "head",
+    "tail"
+]
+
+# Focused context for issue analysis
+[project_context]
+max_chars = 15000
+default_commit_count = 5
