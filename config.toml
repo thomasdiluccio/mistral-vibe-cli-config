@@ -13,6 +13,38 @@ include_project_context = true
 include_prompt_detail = true
 enable_update_checks = true
 api_timeout = 720.0
+
+# Model Aliases for easier switching
+[model_aliases]
+small = "devstral-small"
+medium = "devstral-2"
+large = "mistralai/mistral-large-latest"
+local = "devstral"
+
+# Performance Optimization Settings
+[performance]
+cache_enabled = true
+cache_ttl = 3600  # 1 hour cache for frequent queries
+max_concurrent_requests = 3
+request_timeout = 900.0  # Extended timeout for complex tasks
+memory_limit_mb = 2048  # Increased memory for large contexts
+
+# Agent Aliases for command-line convenience
+[agent_aliases]
+ba = "business_analyst_agent"
+cr = "code_review_agent"
+cto = "cto_agent"
+doc = "documentation_agent"
+fe = "feature_explorer_agent"
+fd = "frontend_developer_agent"
+ic = "issue_creator_agent"
+learn = "learning_agent"
+market = "marketer_agent"
+pe = "plan_executor_agent"
+pm = "product_manager_agent"
+saas = "saas_designer_agent"
+symfony = "symfony_developer_agent"
+web = "website_analyzer_agent"
 tool_paths = []
 mcp_servers = []
 enabled_tools = []
