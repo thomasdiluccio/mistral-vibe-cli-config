@@ -1,7 +1,6 @@
 # Issue Creator Agent Configuration
 # Specialized for creating structured, actionable issues and bug reports
 
-active_model = "devstral-small"
 system_prompt_id = "create_issue"
 
 # Disable write tools to prevent accidental modifications

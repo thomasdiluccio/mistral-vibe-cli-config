@@ -1,7 +1,6 @@
 # Product Manager Agent Configuration
 # Specialized for feature planning, roadmapping, and product strategy
 
-active_model = "devstral-2"
 system_prompt_id = "create_plan"
 
 # Disable tools that aren't needed for planning

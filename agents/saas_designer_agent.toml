@@ -1,7 +1,6 @@
 # SaaS Designer Agent Configuration
 # Specialized for SaaS UI/UX design with React and Tailwind CSS
 
-active_model = "devstral-2"
 system_prompt_id = "saas-designer"
 
 # Enable write tools for design documentation

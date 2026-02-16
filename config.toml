@@ -1,4 +1,4 @@
-active_model = "devstral-2"
+active_model = "devstral-small"
 textual_theme = "tokyo-night"
 vim_keybindings = false
 disable_welcome_banner_animation = false
@@ -14,22 +14,19 @@ include_prompt_detail = true
 enable_update_checks = true
 api_timeout = 720.0
 
-# Model Aliases for easier switching
 [model_aliases]
 small = "devstral-small"
 medium = "devstral-2"
 large = "mistralai/mistral-large-latest"
 local = "devstral"
 
-# Performance Optimization Settings
 [performance]
 cache_enabled = true
-cache_ttl = 3600  # 1 hour cache for frequent queries
+cache_ttl = 3600
 max_concurrent_requests = 3
-request_timeout = 900.0  # Extended timeout for complex tasks
-memory_limit_mb = 2048  # Increased memory for large contexts
+request_timeout = 900.0
+memory_limit_mb = 2048
 
-# Agent Aliases for command-line convenience
 [agent_aliases]
 ba = "business_analyst_agent"
 cr = "code_review_agent"
@@ -221,7 +218,6 @@ denylist = []
 max_write_bytes = 64000
 create_parent_dirs = true
 
-# Custom Commands Configuration
 [[commands]]
 name = "analyze"
 description = "Analyze business opportunities and market fit"
@@ -312,10 +308,28 @@ description = "Create technical architecture"
 agent = "cto_agent"
 prompt = "Design architecture for: {input}"
 
-# Command Categories for better organization
 [command_categories]
-business = ["analyze", "market", "plan"]
-development = ["review", "frontend", "backend", "execute", "arch"]
-creative = ["brainstorm", "design"]
-documentation = ["doc", "issue"]
-learning = ["learn", "explore"]
+business = [
+    "analyze",
+    "market",
+    "plan",
+]
+development = [
+    "review",
+    "frontend",
+    "backend",
+    "execute",
+    "arch",
+]
+creative = [
+    "brainstorm",
+    "design",
+]
+documentation = [
+    "doc",
+    "issue",
+]
+learning = [
+    "learn",
+    "explore",
+]

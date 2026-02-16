@@ -1,7 +1,6 @@
 # Plan Executor Agent Configuration
 # Specialized for precise implementation of predefined plans
 
-active_model = "devstral-2"
 system_prompt_id = "execute_plan"
 
 # Enable write tools for implementation but with caution

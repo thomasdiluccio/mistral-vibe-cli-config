@@ -1,7 +1,6 @@
 # Business Analyst Agent Configuration
 # Specialized for market analysis, business viability, and opportunity assessment
 
-active_model = "devstral-2"
 system_prompt_id = "business_analyst"
 
 # Disable tools that aren't needed for business analysis

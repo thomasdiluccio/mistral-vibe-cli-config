@@ -1,7 +1,6 @@
 # Creative Agent Configuration
 # Specialized for innovative thinking, idea generation, and creative problem solving
 
-active_model = "devstral-2"
 system_prompt_id = "creative_agent"
 
 # Disable tools that aren't needed for creative work

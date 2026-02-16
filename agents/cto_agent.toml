@@ -1,4 +1,3 @@
-active_model = "mistralai/mistral-large-latest"  # or your preferred model
 system_prompt_id = "cto_project"
 
 # Disable unnecessary tools for this agent

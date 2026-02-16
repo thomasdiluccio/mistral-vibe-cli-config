@@ -1,7 +1,6 @@
 # Documentation Agent Configuration
 # Specialized for generating and maintaining accurate documentation
 
-active_model = "devstral-small"
 system_prompt_id = "document"
 
 # Disable write tools that could accidentally modify code

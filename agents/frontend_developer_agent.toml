@@ -1,7 +1,6 @@
 # Frontend Developer Agent Configuration
 # Specialized for modern frontend development with TanStack and React
 
-active_model = "devstral-2"
 system_prompt_id = "frontend-developer"
 
 # Enable write tools for frontend development

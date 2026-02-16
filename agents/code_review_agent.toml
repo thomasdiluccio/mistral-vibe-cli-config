@@ -1,7 +1,6 @@
 # Code Review Agent Configuration
 # Specialized for comprehensive code quality assurance and best practices
 
-active_model = "devstral-2"
 system_prompt_id = "code_review"
 
 # Disable write tools to ensure read-only code review

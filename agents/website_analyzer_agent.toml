@@ -1,7 +1,6 @@
 # Website Analyzer Agent Configuration
 # Specialized for comprehensive website analysis and optimization
 
-active_model = "devstral-2"
 system_prompt_id = "website-analyzer"
 
 # Disable tools that aren't needed for analysis

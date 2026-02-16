@@ -1,7 +1,6 @@
 # Marketer Agent Configuration
 # Specialized for positioning, messaging, and go-to-market strategies
 
-active_model = "devstral-2"
 system_prompt_id = "marketer"
 
 # Disable tools that aren't needed for marketing work

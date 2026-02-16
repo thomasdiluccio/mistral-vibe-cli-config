@@ -1,7 +1,6 @@
 # Symfony Developer Agent Configuration
 # Specialized for Symfony PHP framework development
 
-active_model = "devstral-2"
 system_prompt_id = "symfony-developer"
 
 # Enable write tools for backend development
